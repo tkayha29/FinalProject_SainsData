@@ -32,9 +32,9 @@ if uploaded_image is not None:
     
     # Make a prediction
     prediction = model.predict(img_array)
-    class_names = ['Layak menerima Bansos', 'Tidak Layak menerima Bansos']
+    class_names = ['Layak', 'Tidak-Layak']
     pred_label = class_names[int(prediction > 0.5)]  # Binary classification threshold
     
     # Display the prediction
-    st.write(f"Prediction: {pred_label}")
+    st.write(f"Prediction: {pred_label} menerima Bansos")
     st.write(f"Confidence: {prediction[0][0]:.4f}")
