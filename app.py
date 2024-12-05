@@ -19,7 +19,7 @@ def preprocess_image(uploaded_image):
 
 # Streamlit app
 
-st.title("Image Classification with Keras Model")
+st.title("Penerima Bansos")
 
 uploaded_image = st.file_uploader("Upload an image", type=["jpg", "png", "jpeg"])
 
